@@ -27,3 +27,12 @@ y dos GET para descargar el balance por empresa y por (empresa, usuario).
 mismo momento.
 ● Cada usuario pertenece a una única empresa.
 ● La descarga de los balances puede ser un JSON, no hace falta formatearla.
+
+
+Como hacer funcionar esto ?
+
+- bajar los 2 programas en py
+- bajar docker postgress y luego correr: run --name some-postgres -p 5432:5432 -e POSTGRES_PASSWORD=mysecretpassword -d postgres
+- conectar DBeaver ( o cualquier cliente SQL ) y crear las 3 tablas, con el script que dejo.
+- Correr main
+- ejecutar desde postman los 3 metodos. 
